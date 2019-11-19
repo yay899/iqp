@@ -1,0 +1,1 @@
+add_executable(workflow Data.cpp Instance.cpp main.cpp)
