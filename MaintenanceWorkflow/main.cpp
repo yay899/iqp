@@ -19,18 +19,21 @@ const int numberOfInstances = 20;
 const int numberOfDevTeams = 3;
 const int numberOfDays = 300;
 
-int main(int argc, char** argv) {
+// Global random number generator used throughout the program.
+std::default_random_engine rng;
+
+int main(int /*argc*/, char** /*argv*/) {
     std::cout << "Running isolated instances sim..." << std::endl;
     
-    std::vector<Instance*> instances();
+    std::vector<Instance*> instances;
     for (int i = 0; i < numberOfInstances; i++) {
-        instances.push_back(new Instance())
+		instances.push_back(new Instance());
     }
 
-    std::vector<Instance*> devQueue();
+    std::vector<Instance*> devQueue;
 
     for (int i = 0; i < numberOfDays; i++) {
-        for (auto& it : instances) {
+        for (auto it : instances) {
             if (!it->needsDev()) {
                 it->deploy();
             }
@@ -39,11 +42,11 @@ int main(int argc, char** argv) {
         }
 
         // Develop as many instances as there are available dev teams.
-        auto& it = devQueue.begin();
+        auto it = devQueue.begin();
         for (int j = 0; j < numberOfDevTeams && it < devQueue.end(); j++) {
-            it->develop();
+            (*it)->develop();
 
-            if (it->needsDev()) {
+            if ((*it)->needsDev()) {
                 // If it still needs more dev time, leave it in the queue.
                 continue;
             } else {
@@ -53,12 +56,12 @@ int main(int argc, char** argv) {
         }
     }
 
-    for (auto& it : instances) {
-        delete it;
+	for (auto it = instances.begin(); it < instances.end(); it++) {
+        delete *it;
         it = instances.erase(it);
     }
 
-    for (auto& it : devQueue) {
+	for (auto it = devQueue.begin(); it < devQueue.end(); it++) {
         it = devQueue.erase(it);
     }
 

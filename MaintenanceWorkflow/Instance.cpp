@@ -12,6 +12,11 @@
 
 #include "Instance.hpp"
 
+Instance::Instance(double mean, double stddev) :
+	mean(mean), curMean(mean), stddev(stddev), curStddev(stddev), dat(), devTimer(0) {
+
+}
+
 double Instance::work() {
     int successes = 0;
     std::normal_distribution<double> dst(curMean, curStddev);
