@@ -12,6 +12,7 @@
     numpages = {4},
     location = {Amsterdam, Netherlands},
     series = {HILDA’19},
+    abstract = {When end users apply a machine learning (ML) model on new unlabeled data, it is difficult for them to decide whether they can trust its predictions. Errors or shifts in the target data can lead to hard-to-detect drops in the predictive quality of the model. We therefore propose an approach to assist non-ML experts working with pretrained ML models. Our approach estimates the change in prediction performance of a model on unseen target data. It does not require explicit distributional assumptions on the dataset shift between the training and target data. Instead, a domain expert can declaratively specify typical cases of dataset shift that she expects to observe in real-world data. Based on this information, we learn a performance predictor for pretrained black box models, which can be combined with the model, and automatically warns end users in case of unexpected performance drops. We demonstrate the effectiveness of our approach on two models -- logistic regression and a neural network, applied to several real-world datasets.},
     annotate = {This regards the difficulty of validating the predictions of a machine learning (ML) models when errors in the input data induce unwanted and unknown changes in the model's weights. This is difficult due to it being legitimately hard to confirm if predictions are correct or not until whatever they predict has come to pass, and frequently this involves making unrealistic assumptions on the nature of possible dataset shifts. Emphasis is placed on the lack of availability of validation tools for use by non-ML experts. Unfortunately, the article only really goes into detecting problems, and states that the user should contact an ML expert in the event of degredation in the predictive model. That solution that is proposed seems interesting.}
 }
 
@@ -30,6 +31,7 @@
     keywords = {predictive modeling, interactive machine learning, partial dependence},
     location = {San Jose, California, USA},
     series = {CHI ’16},
+    abstract = {Understanding predictive models, in terms of interpreting and identifying actionable insights, is a challenging task. Often the importance of a feature in a model is only a rough estimate condensed into one number. However, our research goes beyond these naive estimates through the design and implementation of an interactive visual analytics system, Prospector. By providing interactive partial dependence diagnostics, data scientists can understand how features affect the prediction overall. In addition, our support for localized inspection allows data scientists to understand how and why specific datapoints are predicted as they are, as well as support for tweaking feature values and seeing how the prediction responds. Our system is then evaluated using a case study involving a team of data scientists improving predictive models for detecting the onset of diabetes from electronic medical records.},
     annotate = {Details Prospector, a tool for visualizing ML models. The article uses a diabetes research, and has a focus on medical applications.}
 }
 
@@ -41,7 +43,58 @@
     number = {2},
     pages = {47--53},
     year = {2018},
+    abstract = {In this article, we look at trust in artificial intelligence, machine learning (ML), and robotics. We first review the concept of trust in AI and examine how trust in AI may be different from trust in other technologies. We then discuss the differences between interpersonal trust and trust in technology and suggest factors that are crucial in building initial trust and developing continuous trust in artificial intelligence.},
     annotate = {Formally defines trust, and then goes into the various factors that contribute to both initial trust and the process of building trust. Seems to suggest that initial trust doesn't have a whole lot to do with the actual functionality of the AI (just various things that affect perception.) Kinda basic, and doesn't focus too hard on ML, but still useful. It focuses way too hard on stereotypical AI things, even going as far to say "AI will continue to enhance its capability and infiltrate more domains." Consider replacing this.}
 }
 
-  
+@misc{bbc2016rroai,
+    author = {Bianca Nogrady},
+    title = {The real risks of artificial intelligence --- {BBC}},
+    year = 2016,
+    url = {https://www.bbc.com/future/article/20161110-the-real-risks-of-artificial-intelligence},
+    eprint = {https://www.bbc.com/future/article/20161110-the-real-risks-of-artificial-intelligence},
+    note = {[Online; accessed 28-Febuary-2020]},
+    annotate = {Talks about how the fears regarding artificial intelligence don't really line up with the actual risks of artificial intelligence. Basically everyone is afraid of an AI uprising, and no one is afraid of how much trust we put into systems that are incredibly difficult to verify (IE, AI is a black box). Specifically addresses machine learning, and occasionally conflates it with procedural AI. Points out that AI is already used significantly.}
+}
+
+@misc{emerj2019roawrtiwwa,
+    author = {Daniel Faggella},
+    title = {Risks of AI -- What Researchers Think is Worth Worrying About --- {EMERJ}},
+    year = 2019,
+    url = {https://emerj.com/ai-market-research/artificial-intelligence-risk/},
+    eprint = {https://emerj.com/ai-market-research/artificial-intelligence-risk/},
+    note = {[Online; accessed 28-Febuary-2020]},
+    annotate = {Talks about more professional concerns of machine learning. Points out that AI will do nothing to alleviate current socioeconomic problems, and that large scale societal changes would be required for that. Also pointed out that the impact it has on automation will accelerate pollution, resource consumption, and financial inequality.}
+}
+
+@article{doi:10.1191/1478088706qp063oa,
+    author = {Virginia Braun and Victoria Clarke},
+    title = {Using thematic analysis in psychology},
+    journal = {Qualitative Research in Psychology},
+    volume = {3},
+    number = {2},
+    pages = {77-101},
+    year  = {2006},
+    publisher = {Routledge},
+    doi = {10.1191/1478088706qp063oa},
+    URL = {https://www.tandfonline.com/doi/abs/10.1191/1478088706qp063oa},
+    eprint = {https://www.tandfonline.com/doi/pdf/10.1191/1478088706qp063oa},
+    abstract = {Thematic analysis is a poorly demarcated, rarely-acknowledged, yet widely-used qualitative analytic method within psychology. In this paper, we argue that it offers an accessible and theoretically-flexible approach to analysing qualitative data. We outline what thematic analysis is, locating it in relation to other qualitative analytic methods that search for themes or patterns, and in relation to different epistemological and ontological positions. We then provide clear guidelines to those wanting to start thematic analysis, or conduct it in a more deliberate and rigorous way, and consider potential pitfalls in conducting thematic analysis. Finally, we outline the disadvantages and advantages of thematic analysis. We conclude by advocating thematic analysis as a useful and flexible method for qualitative research in and beyond psychology.},
+    annotate = {Gives a tutorial on thematic analysis, and explains how it stands as its own method of qualitative analysis rather than a tool for qualitative analysis. Something doesn't have to be literally the most prevelant thing for it to be a theme, and there is no hard cutoff between what is and isn't a theme. Latent analysis focuses on the meaning behind data while semantic focuses on the contents of the data. (Read the actual guide on performing this later)}
+}
+
+@article{Corbin1990,
+    author = {Corbin, Juliet M. and Strauss, Anselm},
+    title = {Grounded theory research: Procedures, canons, and evaluative criteria},
+    journal = {Qualitative Sociology},
+    year = {1990},
+    volume = {13},
+    number = {1},
+    pages = {3-21},
+    abstract = {Using grounded theory as an example, this paper examines three methodological questions that are generally applicable to all qualitative methods. How should the usual scientific canons be reinterpreted for qualitative research? How should researchers report the procedures and canons used in their research? What evaluative criteria should be used in judging the research products? We propose that the criteria should be adapted to fit the procedures of the method. We demonstrate how this can be done for grounded theory and suggest criteria for evaluating studies following this approach. We argue that other qualitative researchers might be similarly specific about their procedures and evaluative criteria.},
+    issn = {1573-7837},
+    doi = {10.1007/BF00988593},
+    url = {https://doi.org/10.1007/BF00988593},
+    annotate = {Grounded theory regards the sorting of data by rigid concepts that once defined can be identified in members of the data set in order to figure out how these concepts effect the phonomenon in question. It seems to be more focused on incidents and events rather than subjects, and intensity of events is important.}
+}
+
