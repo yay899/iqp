@@ -15,45 +15,73 @@
 	\maketitle
 	
 	\begin{abstract}
-		I'm dying This will contain an abstract at some point, but it’s kind of hard to write one at the moment.
+		Placeholder abstract
 	\end{abstract}
 	
 	\section{Introduction}
-		This section will contain our research questions, and what we did to answer them (research, surveys, data analysis. Prefacing all of this will be the definition of some important terms that are used throughout the paper. Most of our research questions are outlined in another document.
+		% This section will contain our research questions, and what we did to answer them (research, surveys, data analysis. Prefacing all of this will be the definition of some important terms that are used throughout the paper. Most of our research questions are outlined in another document.	
+	
+		Artificial intelligence (AI) and, more importantly, machine learning (ML) is becoming increasingly prevalent in medical fields. Though regulations are being discussed regarding AI as a whole, the regulations proposed by the FDA\cite{} place a large emphasis on procedural AI which severely limits the capabilities of ML models. Simply lifting those restrictions would cause more harm than good, however. We wish to add to this discussion in the hopes of creating both safer and more favorable conditions for medical ML models.
+
+		Machine learning comprises a subset of AI that closely matches what most commonly comes to mind when AI is mentioned---both conversationally and within popular culture.\textbf{[Citation needed]} The difference between procedural AI and ML is detailed in section \ref{introtoai}, but, in essence, procedural AI takes input data and outputs a response by following a strict set of rules or procedures, while ML takes input data and outputs a response determined by a set of facets of interest and weights than may change and shift with each input. Frequently ML models undergo a period of "training", during which weights may shift wildly, followed by a period of relatively little change.\textbf{[Citation needed]}
+
+		% This part is definitely really rough, and needs to be expanded.
+		There are a number of terms used throughout the field of AI that may be misleading at first glance: "feature" refers to what amounts to an interesting property or value in the input data represented by a function explicitly defined by the developers of the AI. Within the context of ML, these functions are what is modified by changes in the weights of the model.\textbf{[Citation needed?]}
 		
-	\section{Basics of Artificial Intelligence}
-		Artificial Intelligence (AI) in its basic form is a computer program that takes in an input or inputs and produces an output.  An example would be if a program took in how many hours it had been since someone showered and determined whether they were due for a shower or not.  The AI would have a threshold that would trigger a recommendation to shower.  For the purpose of this example we will set it at twenty-four hours.  If it had been sixteen hours since someone showered, it would not tell them to shower, but if it had been twenty-seven hours since they showered, the AI would recommend a shower.  However, we know time is not the only factor in whether someone should shower.  To better improve this theoretical AI, a second input could be added such as whether the person had showered since their last shower.  In general, people should shower after they exercise.  The updated logic in the AI is that it will recommend a shower if the time since the last shower is greater than twenty-four hours or if they have exercised since their last shower. Only one condition has to be true to recommend a shower, but both could be true.  The more inputs or parameters that the AI takes in the better it will get a giving a correct output as long the researcher determined the correct thresholds for the AI.
+	\section{Basics of Artificial Intelligence}\label{introtoai}
+		Artificial intelligence (AI) in its basic form is a computer program that takes in an input or inputs and produces an output. An example of a procedural AI would be a program that took in how many hours it had been since someone showered and determined whether they were due for a shower or not. The AI would have a threshold that would trigger a recommendation to shower. For the purpose of this example we will set it at twenty-four hours. If it had been sixteen hours since someone showered, it would not tell them to shower, but if it had been twenty-seven hours since they showered, the AI would recommend a shower. However, we know time is not the only factor in whether someone should shower. To better improve this theoretical AI, a second input could be added such as whether the person had showered since their last shower. In general, people should shower after they exercise. The updated logic in the AI is that it will recommend a shower if the time since the last shower is greater than twenty-four hours or if they have exercised since their last shower. Only one condition has to be true to recommend a shower, but both could be true. The more inputs or parameters that the AI takes in the better it will get a giving a correct output as long the researcher determined the correct thresholds for the AI.
 
-		Eventually as the AI gets more complex, two problems present themselves.  First, not all problems that an AI tries to solve has a simple linear relation between their inputs and the output.  Second, the researcher may not know the exact relation between the inputs and the output.  This is where a subset of AI called Machine Learning (ML) comes into play.  ML more or less simulates a brain to a far lesser extent.  The way the brain works is it has many neurons that are connected together by synapses.
+		Eventually as the AI gets more complex, two problems present themselves. First, not all problems that an AI tries to solve has a simple linear relation between their inputs and the output. Second, the researcher may not know the exact relation between the inputs and the output. This is where a subset of AI called Machine Learning (ML) comes into play. Neural networking, a method of ML, crudely simulates a brain. The way the brain works is it has many neurons that are connected together by synapses.
 
-		% Going to throw some temporary stuff down here.
-		\medskip
+		% Machine learning (ML).
 
-		Machine learning (ML).
+		% We really need to work hard to make it clear that we are discussing primarily ML models and not procedural AI. I've basically replaced AI with ML model in almost every part I've been writing below.
 
-		We really need to work hard to make it clear that we are discussing primarily ML models and not procedural AI. I've basically replaced AI with ML model in almost every part I've been writing below.
+		% We need to detail the difference between supervised and unsupervised training.
 		
 
-	\section{General Ethics}
-		This section will go into the basic definition of ethics before going into more detail about how ethics apply to medical devices. There will also be some stuff on the legal and ethical considerations of using electronic health records as training data for learning AI.
+	\section{Ethics of Medical Devices and ML}
+		% This section will go into the basic definition of ethics before going into more detail about how ethics apply to medical devices. There will also be some stuff on the legal and ethical considerations of using electronic health records as training data for learning AI.
 
 	\section{Expectations of Medical AI}
-		This section will go into how nurses and patients view medical AI, as well as how they expect it to function. This will make heavy use of gathered survey data and highlight both differences between the two groups, and just general areas that could cause some concern if they are not kept in mind while developing medical applications of machine learning.
+		% This section will go into how nurses and patients view medical AI, as well as how they expect it to function. This will make heavy use of gathered survey data and highlight both differences between the two groups, and just general areas that could cause some concern if they are not kept in mind while developing medical applications of machine learning.
 
 	\section{Benefits of Medical AI}
-		This section will go into what sort of benefits medical AI may be able to provide regardless of what people expect of it. It will bring up how it can lighten the workload of overworked healthcare professionals, and how it may lead to better treatment selection by pulling from data a human would not expect to be relevant.
+		% This section will go into what sort of benefits medical AI may be able to provide regardless of what people expect of it. It will bring up how it can lighten the workload of overworked healthcare professionals, and how it may lead to better treatment selection by pulling from data a human would not expect to be relevant.
 
 	\section{Risks of Medical AI}
-		Medical ML models carry with them great risk.\textbf{[Citation needed]}
+		Medical ML models carry with them great risk, the greatest of which stems from a popular misunderstanding of the risk associated with ML as a whole. Within popular media, the risk of ML is often centered entirely around the threat of some kind of AI uprising when the real threat is the lack of explainability and verifiability in most ML models along with the potential socio-economic and environmental impact of increased use of ML.\cite{bbc2016rroai,emerj2019roawrtiwwa}
 
-		More often than not ML models are a black box that takes in datasets and outputs values with some prescribed significance. It is difficult for non-ML experts understand the risks and potential failure points of a given ML model, and methods of addressing this lack of interpretability of the model or explainability of the algorithm is still being debated.\cite{10.1145/2858036.2858529, 10.1145/3328519.3329126} This in conjunction with a typical person's initial trust placing little to no emphasis on the actual functionality of a ML model\cite{siau2018building} can make for sudden and unexpected tragedy within medical fields.
+		More often than not ML models are a black box that takes in datasets and outputs values with some prescribed significance. It is difficult for non-ML experts understand the risks and potential failure points of a given ML model, and methods of addressing this lack of interpretability of the model or explainability of the algorithm are still being debated.\cite{10.1145/2858036.2858529, 10.1145/3328519.3329126} This in conjunction with a typical person's initial trust placing little to no emphasis on the actual functionality of a ML model\cite{siau2018building} can make for sudden and unexpected tragedy within medical fields.
 
 		There is immense difficulty of validating the predictions (before acting on them) of a ML model. This creates further risk by obfuscating potential error behind a highly technical veil for non-ML experts. Moreover, unknown error introduced in input datasets is difficult to detect without access to the data itself, as the ML model will continue to output seemingly valid predictions\cite{10.1145/3328519.3329126} Error could be introduced through any number of innocuous vectors (differences in storage systems between health centers, errors digitizing physical records, decay of electronic records over time) or through more malignant ones (such as a targeted attack). The delicacy of handling electronic health records can make it legally difficult to inspect them for these errors\textbf{[Citation needed]}, and the sheer size of the task is prohibitive.
 
 		"Learning to Validate the Predictions of Black Box Machine Learning Models on Unseen Data"\cite{10.1145/3328519.3329126} provides method of detecting dataset shifts without directly examining the dataset itself. \textbf{(I don't entirely understand all the math here, so I'll write this later. Alternatively, James could handle this. --Max)}
 
+		Not only can shifts in datasets cause unexpected error in outputs, but so can misapplication of a ML model and unintended bias introduced by the training datasets.
+
+		\textbf{(Integrate what follows into the text more, and add citations --Max)}
+
+		The maintenance of a medical artificial intelligence (AI) is an important aspect that needs to be thoroughly examined. Without the implementation of maintenance of the medical AI, the performance could be degraded as the AI is trained on new data. As time goes along, it would become more likely for some form of AI malpractice to happen.
+	
+		Maintenance could be manual or automated. However, manual maintenance runs into the problem of the extremely high workload, which makes it infeasible for humans to labor at. The only option is automated maintenance, but there are a variety of questions to consider to ensure a safe AI.
+	
+		The first of the questions is how will quality assurance (QA) be performed with an AI continuously learning. The initial proposed framework for QA is the AI will train itself on new data on a set time cycle. After training, the AI will be tested against a comprehensive set of unit tests. If it passes the tests, the AI with the updated weight will be deployed. However if it fails, the AI will revert back to its previously trained weights and a report of the data with the unit tests it failed will be sent to the developers. This will all happen at a central location within the company that developed the AI. Every instance of the AI will be the same after each automated maintenance cycle. Pass and fail of the unit tests are subjective at this time.
+
+		The second question is how will the QA process be regulated to ensure the maintenance is keeping patients from being exposed to risk. This can be answered by using the premarket review of the AI. As part of what a company needs to submit to the FDA, they need to submit their tests. The FDA will set a standard that determines whether the unit tests are good enough for the automated maintenance of the AI. If the tests fail the premarket review, the AI returns to development until the next premarket review. On the other hand if the tests pass the review, the AI is allowed to be deployed where it will use the tests defined in the premarket review for its maintenance.
+
+		The tests however can not be changed once the AI is deployed after the premarket review. If the company wants to update its test based development done from failed unit testing, another premarket review will need to occur to define the tests again.
+
+		What it means to pass the premarket review can also change based on political and outside influences. Depending on what ideology controls the government can drastically change how hard or easy it is to pass the premarket review. One side is more of the spectrum is more inclined to push for a less restricted market. The other side is going to push for tighter regulations. In either case, there needs to be a balance between free market and regulation. Without enough free market, a few companies could control the majority of medical AI’s. On the flip side with no regulation, patients’ well-being comes to be at risk. The balance needs to be such that there is competition, but without risk to the patients. Lobbyists can also affect what goes into passing the premarket review. Initially, it will be companies sending these lobbyists likely to push for less regulations. However, eventually some type of activist group will show up to lobby for tighter regulations if medical AI’s have become risky.
+
+		Figure 1: Framework for Automated Maintenance of a Medical AI \textbf{(Port graph to LaTeX at some point --Max)}
+
+		There are still problems and things to consider. It is hard to define what is “good enough” for these unit tests. In testing, edge cases are difficult to identify in something as complex as a medical AI. The performance of the AI might go up for what the unit tests are checking for, but could get incrementally worse for sometiming not check. Another thing to consider is political influence. Depending on the politics at the time, what is “good enough” could be lowered to the point of risking patients’ health.
+	
+		Overall, automated maintenance of a medical AI is feasible. There are many variables to consider when creating a framework that allows the AI to continuously learn without causing risk to patients. 
+
 	\section{Balance of Regulation Against the Free Market}
-		This section will go into detail on the pros and cons of high and low regulation, emphasizing both the massive increase in risk that comes with low regulations and how high regulations could strangle innovation.
+		% This section will go into detail on the pros and cons of high and low regulation, emphasizing both the massive increase in risk that comes with low regulations and how high regulations could strangle innovation.
 
 \medskip
 
