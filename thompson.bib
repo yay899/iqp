@@ -226,3 +226,19 @@
     url = {https://pubmed.ncbi.nlm.nih.gov/30399149},
     annotate = {Has survey data regarding medical ML, and has a graphic that broadly outlines the various concerns. Points out that different places have reached different concensuses regarding sourcing data. It does this by showing the difference between GDPR and HIPPA. Covers how current regulation doesn't really work for ML. Honestly it's basically the exact same thing we're trying to do.}
 }
+
+@ARTICLE{6868201,
+    author = {M. {Mozaffari-Kermani} and S. {Sur-Kolay} and A. {Raghunathan} and N. K. {Jha}},
+    journal = {IEEE Journal of Biomedical and Health Informatics},
+    title = {Systematic Poisoning Attacks on and Defenses for Machine Learning in Healthcare},
+    year = {2015},
+    volume = {19},
+    number = {6},
+    pages = {1893-1905},
+    abstract = {Machine learning is being used in a wide range of application domains to discover patterns in large datasets. Increasingly, the results of machine learning drive critical decisions in applications related to healthcare and biomedicine. Such health-related applications are often sensitive, and thus, any security breach would be catastrophic. Naturally, the integrity of the results computed by machine learning is of great importance. Recent research has shown that some machine-learning algorithms can be compromised by augmenting their training datasets with malicious data, leading to a new class of attacks called poisoning attacks. Hindrance of a diagnosis may have life-threatening consequences and could cause distrust. On the other hand, not only may a false diagnosis prompt users to distrust the machine-learning algorithm and even abandon the entire system but also such a false positive classification may cause patient distress. In this paper, we present a systematic, algorithm-independent approach for mounting poisoning attacks across a wide range of machine-learning algorithms and healthcare datasets. The proposed attack procedure generates input data, which, when added to the training set, can either cause the results of machine learning to have targeted errors (e.g., increase the likelihood of classification into a specific class), or simply introduce arbitrary errors (incorrect classification). These attacks may be applied to both fixed and evolving datasets. They can be applied even when only statistics of the training dataset are available or, in some cases, even without access to the training dataset, although at a lower efficacy. We establish the effectiveness of the proposed attacks using a suite of six machine-learning algorithms and five healthcare datasets. Finally, we present countermeasures against the proposed generic attacks that are based on tracking and detecting deviations in various accuracy metrics, and benchmark their effectiveness.},
+    keywords = {health care;learning (artificial intelligence);medical computing;pattern classification;security of data;systematic poisoning attacks;healthcare;application domains;critical decisions;biomedicine;health-related applications;security breach;machine-learning algorithms;training datasets;malicious data;life-threatening consequences;false diagnosis prompt users;false positive classification;patient distress;targeted errors;arbitrary errors;Machine learning algorithms;Training;Malware;Security;Healthcare;machine learning;poisoning attacks;security;Algorithms;Computer Security;Databases, Factual;Humans;Machine Learning;Medical Informatics;Models, Theoretical;Neoplasms},
+    doi = {10.1109/JBHI.2014.2344095},
+    ISSN = {2168-2208},
+    month = {Nov},
+    annotate = {Posioning attacks are bad and very hard to detect when you can't examine your data on account of it being sensitive and private information. The article details methods of performing poisoning attacks, and vaguely suggests some ways of defending from them.}
+}
